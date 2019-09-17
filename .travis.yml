@@ -6,10 +6,11 @@ osx_image: xcode11
 language: objective-c
 # cache: cocoapods
 podfile: Example/Podfile
+xcode_workspace: Example/Validatr.xcworkspace
+xcode_destination: platform=iOS Simulator,OS=11.0,name=iPhone 8
 # before_install:
 # - gem install cocoapods # Since Travis is not always on latest version
 # - pod install --project-directory=Example
 script:
-- set -o pipefail && xcodebuild test -enableCodeCoverage YES -workspace Example/Validatr.xcworkspace s-scheme Validatr-Example -dk iphonesimulator11.0 ONLY_ACTIVE_ARCH=NO | xcpretty
+# - set -o pipefail && xcodebuild test -enableCodeCoverage YES -workspace Example/Validatr.xcworkspace s-scheme Validatr-Example -dk iphonesimulator11.0 ONLY_ACTIVE_ARCH=NO | xcpretty
 - pod lib lint
-
