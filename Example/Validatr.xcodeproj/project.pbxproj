@@ -16,6 +16,7 @@
 		9332E21623315620009BC0E9 /* UITextFIeld+ValidatableSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9332E21323315620009BC0E9 /* UITextFIeld+ValidatableSpec.swift */; platformFilter = ios; };
 		9332E21723315620009BC0E9 /* ValidatrTextFieldSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9332E21423315620009BC0E9 /* ValidatrTextFieldSpec.swift */; platformFilter = ios; };
 		9332E21823315620009BC0E9 /* ValidationRuleSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9332E21523315620009BC0E9 /* ValidationRuleSpec.swift */; platformFilter = ios; };
+		9332E21A2331A568009BC0E9 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9332E2192331A568009BC0E9 /* XCTest.framework */; };
 		B786B969C7AF21F0D2C02DCC /* Pods_Validatr_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 524C213CDA1BD6191D91DA4A /* Pods_Validatr_Tests.framework */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +51,7 @@
 		9332E21323315620009BC0E9 /* UITextFIeld+ValidatableSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextFIeld+ValidatableSpec.swift"; sourceTree = "<group>"; };
 		9332E21423315620009BC0E9 /* ValidatrTextFieldSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidatrTextFieldSpec.swift; sourceTree = "<group>"; };
 		9332E21523315620009BC0E9 /* ValidationRuleSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidationRuleSpec.swift; sourceTree = "<group>"; };
+		9332E2192331A568009BC0E9 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		ACFA9E97C98C6E495EEDC032 /* Pods-Validatr_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Validatr_Example.debug.xcconfig"; path = "Target Support Files/Pods-Validatr_Example/Pods-Validatr_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -66,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9332E21A2331A568009BC0E9 /* XCTest.framework in Frameworks */,
 				B786B969C7AF21F0D2C02DCC /* Pods_Validatr_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -159,6 +162,7 @@
 		E8F7A2730C5705F3C1C689E5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9332E2192331A568009BC0E9 /* XCTest.framework */,
 				65E4FF478B6ACDEAA95E6402 /* Pods_Validatr_Example.framework */,
 				524C213CDA1BD6191D91DA4A /* Pods_Validatr_Tests.framework */,
 			);
@@ -318,13 +322,12 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Validatr_Example/Pods-Validatr_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Validatr/Validatr.framework",
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Validatr_Example/Pods-Validatr_Example-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Validatr.framework",
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Validatr_Example/Pods-Validatr_Example-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -336,19 +339,12 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Validatr_Tests/Pods-Validatr_Tests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/FBSnapshotTestCase/FBSnapshotTestCase.framework",
-				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
-				"${BUILT_PRODUCTS_DIR}/Nimble-Snapshots/Nimble_Snapshots.framework",
-				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Validatr_Tests/Pods-Validatr_Tests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSnapshotTestCase.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble_Snapshots.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Validatr_Tests/Pods-Validatr_Tests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
