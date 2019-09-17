@@ -1,6 +1,6 @@
 # Validatr
 
-[![CI Status](https://img.shields.io/travis/Aaron Rosenbaum/Validatr.svg?style=flat)](https://travis-ci.org/Aaron Rosenbaum/Validatr)
+[![CI Status](https://img.shields.io/travis/arosenb2/Validatr.svg?style=flat)](https://travis-ci.org/arosenb2/Validatr)
 [![Version](https://img.shields.io/cocoapods/v/Validatr.svg?style=flat)](https://cocoapods.org/pods/Validatr)
 [![License](https://img.shields.io/cocoapods/l/Validatr.svg?style=flat)](https://cocoapods.org/pods/Validatr)
 [![Platform](https://img.shields.io/cocoapods/p/Validatr.svg?style=flat)](https://cocoapods.org/pods/Validatr)
